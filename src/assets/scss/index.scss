@@ -1,0 +1,108 @@
+@import './normalize';
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    // height: 100vh;
+}
+body {
+    overflow: hidden;
+}
+.el-select {
+    width: 100%;
+}
+
+.el-scrollbar .el-scrollbar__wrap {
+    overflow: auto !important;
+}
+
+.project-dialog {
+    .el-dialog__header {
+        border-bottom: 1px solid #3a4659;
+
+        background: #171b22 !important;
+        .title {
+            color: rgba(255, 255, 255, 0.74) !important;
+        }
+    }
+    .el-dialog__body {
+        background: #171b22 !important;
+    }
+    .el-form-item__label {
+        color: rgba(255, 255, 255, 0.74);
+    }
+
+    .el-textarea__inner {
+        background: #000 !important;
+        color: #fff;
+        border: none;
+    }
+    .el-input__inner {
+        background: #000 !important;
+        border: none;
+        color: #fff;
+    }
+    .dialog-button {
+        margin-top: 20px;
+        text-align: right;
+        .el-button {
+            background: #000;
+            color: rgba(255, 255, 255, 0.74);
+            border: 1px solid #0080ff;
+        }
+    }
+    .el-input-group__prepend {
+        background-color: #171b22;
+        color: #909399;
+        border: none;
+    }
+    .el-dialog__close {
+        color: #909399 !important;
+    }
+}
+// 下拉框样式
+.project-select {
+    background-color: #3a4659;
+    border: none !important;
+
+    .el-tree {
+        background-color: #3a4659;
+        .el-tree-node__content {
+            background-color: #3a4659 !important;
+            & > div {
+                flex: 1;
+            }
+        }
+    }
+    .el-select-dropdown__item {
+        color: #fff !important;
+        background-color: #3a4659 !important;
+    }
+    .popper__arrow {
+        background-color: #171b22;
+        border-color: #171b22 !important;
+
+        &::after {
+            border-bottom-color: #171b22 !important;
+        }
+    }
+    .selected {
+        color: #409eff !important;
+    }
+}
+// messagebox样式
+.project-messagebox {
+    background: #171b22 !important;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    .el-message-box__title,
+    .el-message-box__message {
+        color: rgba(255, 255, 255, 0.74);
+    }
+    .el-button {
+        background: #171b22;
+        color: rgba(255, 255, 255, 0.74);
+        border: 1px solid #0080ff;
+    }
+}

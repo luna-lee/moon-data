@@ -1,0 +1,3 @@
+{
+    "!(public/static/**/*).{js,vue,css,scss,less,json}": ["prettier --write"]
+}
